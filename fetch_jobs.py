@@ -1,6 +1,5 @@
 import requests
 
-def fetch_jobs():
-    url = "https://remotive.io/api/remote-jobs?category=software-dev"
+def fetch_jobs(url):
     response = requests.get(url)
     return response.json()["jobs"]
